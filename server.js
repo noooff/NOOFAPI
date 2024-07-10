@@ -6,8 +6,9 @@ const sql = require('./database_config.js');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
 const cors = require('cors');
-const app = express();
 const PORT  = process.env.PORT || 5456;
+
+const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -37,6 +38,7 @@ const swaggerOptions = {
         basePath: '/',
         schemes: ['https']
     },
+    servers:[{url : `https://oufapi-5cc267ed7086.herokuapp.com`}],
     apis: ['./routes/userAPI.js', './routes/productAPI.js'] // Paths to your Swagger annotations files
 };
 
