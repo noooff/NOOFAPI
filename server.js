@@ -33,9 +33,9 @@ const swaggerOptions = {
             version: "0.0.1",
             description: "A simple express API with Swagger"
         },
-        host: `localhost:${port}`,
+        host: `oufapi-5cc267ed7086.herokuapp.com`,
         basePath: '/',
-        schemes: ['http']
+        schemes: ['https']
     },
     apis: ['./routes/userAPI.js', './routes/productAPI.js'] // Paths to your Swagger annotations files
 };
@@ -63,6 +63,6 @@ app.post('/upload', upload.single('image'), (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-    console.log(`Swagger UI is available on http://localhost:${port}/api-ui`);
+    console.log(`Server is running on https://noufapi-5cc267ed7086.herokuapp.com/`);
+    console.log(`Swagger UI is available on https://noufapi-5cc267ed7086.herokuapp.com/api-ui`);
 });
