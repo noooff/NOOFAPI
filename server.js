@@ -7,7 +7,7 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
 const cors = require('cors');
 const app = express();
-const port = 3007;
+const PORT  = process.env.PORT || 5456;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -62,7 +62,7 @@ app.post('/upload', upload.single('image'), (req, res) => {
   res.send({ imagePath: imagePath });
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Server is running on https://noufapi-5cc267ed7086.herokuapp.com/`);
     console.log(`Swagger UI is available on https://noufapi-5cc267ed7086.herokuapp.com/api-ui`);
 });
