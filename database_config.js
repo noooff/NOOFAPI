@@ -1,9 +1,9 @@
 const sql = require("mssql")
 const config = {
-    user : 'sa',
-     password: 'sa', 
-     server: 'localhost',
-      database: 'ShoppingDB', 
+    user : 'adminammar',
+     password: 'P@ssw0rd69', 
+     server: 'serve24.database.windows.net',
+      database: 'shoppingdb', 
       options: {
         trustServerCertificate: true
       }
