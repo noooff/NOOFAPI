@@ -34,11 +34,11 @@ const swaggerOptions = {
             version: "0.0.1",
             description: "A simple express API with Swagger"
         },
-        host: `oufapi-5cc267ed7086.herokuapp.com`,
+        host: `noufapi-5cc267ed7086.herokuapp.com`,
         basePath: '/',
         schemes: ['https']
     },
-    servers:[{url : `https://oufapi-5cc267ed7086.herokuapp.com`}],
+    servers:[{url : `https://noufapi-5cc267ed7086.herokuapp.com`}],
     apis: ['./routes/userAPI.js', './routes/productAPI.js'] // Paths to your Swagger annotations files
 };
 
